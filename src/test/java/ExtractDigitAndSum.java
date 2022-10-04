@@ -7,10 +7,10 @@ public class ExtractDigitAndSum {
 
     public static void main(String[] agr) {
         String str = "abcasa";
-        extractDigitandSum(str);
+        extractDigitAndSum(str);
     }
 
-    private static void extractDigitandSum(String str) {
+    private static void extractDigitAndSum(String str) {
 
         char[] arr = str.toCharArray();
         int len = arr.length;
