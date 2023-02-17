@@ -1,4 +1,4 @@
-package codingQuestions;
+package codingQuestions.arrayBased;
 
 class A {
     void m1() {

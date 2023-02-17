@@ -1,4 +1,4 @@
-package codingQuestions;
+package codingQuestions.strings;
 
 public class PanlindromTest {
 

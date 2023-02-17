@@ -1,3 +1,5 @@
+package codingQuestions.strings;
+
 public class Test16 {
 
     //count =1
