@@ -3,16 +3,32 @@ package codingQuestions.list;
 public class Test6 {
     Node head;
 
-    class Node {
-        int data;
-        Node next;
+    public static void main(String[] args) {
+        /* Start with the empty list */
+        Test6 llist = new Test6();
 
-        Node(int d) {
-            data = d;
-            next = null;
-        }
+        // Insert 6.  So linked list becomes 6->NUllist
+        llist.append(6);
+
+        // Insert 7 at the beginning. So linked list becomes
+        // 7->6->NUllist
+        llist.push(7);
+
+        // Insert 1 at the beginning. So linked list becomes
+        // 1->7->6->NUllist
+        llist.push(1);
+
+        // Insert 4 at the end. So linked list becomes
+        // 1->7->6->4->NUllist
+        llist.append(4);
+
+        // Insert 8, after 7. So linked list becomes
+        // 1->7->8->6->4->NUllist
+        llist.afetrGivingNode(8, llist.head.next);
+
+        System.out.println("\nCreated Linked list is: ");
+        llist.printList();
     }
-
 
     public void push(int new_data) {
         Node new_node = new Node(new_data);
@@ -56,31 +72,14 @@ public class Test6 {
         }
     }
 
-    public static void main(String[] args) {
-        /* Start with the empty list */
-        Test6 llist = new Test6();
+    class Node {
+        int data;
+        Node next;
 
-        // Insert 6.  So linked list becomes 6->NUllist
-        llist.append(6);
-
-        // Insert 7 at the beginning. So linked list becomes
-        // 7->6->NUllist
-        llist.push(7);
-
-        // Insert 1 at the beginning. So linked list becomes
-        // 1->7->6->NUllist
-        llist.push(1);
-
-        // Insert 4 at the end. So linked list becomes
-        // 1->7->6->4->NUllist
-        llist.append(4);
-
-        // Insert 8, after 7. So linked list becomes
-        // 1->7->8->6->4->NUllist
-        llist.afetrGivingNode(8, llist.head.next);
-
-        System.out.println("\nCreated Linked list is: ");
-        llist.printList();
+        Node(int d) {
+            data = d;
+            next = null;
+        }
     }
 
 

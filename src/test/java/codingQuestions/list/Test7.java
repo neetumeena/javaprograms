@@ -1,20 +1,36 @@
 package codingQuestions.list;
 
 public class Test7 {
-
-
     Node head;
+    public static void main(String[] args) {
+        Test7 llist = new Test7();
 
-    class Node {
-        int data;
-        Node next;
+//        llist.push(7);
+//        llist.push(1);
+//        llist.push(3);
+//        llist.push(2);
+//
+//        System.out.println("\nCreated Linked list is:");
+//        llist.printList();
+//
+//        llist.deleteNode(1); // Delete node with data 1
+//
+//        System.out.println("\nLinked List after Deletion of 1:");
+//        llist.printList();
 
-        Node(int d) {
-            data = d;
-            next = null;
+        llist.push(7);
+        llist.push(1);
+        llist.push(3);
+        llist.push(2);
+        llist.push(8);
 
-        }
+        System.out.println("\nCreated Linked list is: ");
+        llist.printList();
 
+        llist.deleteNode_givenPosition(0);  // Delete node at position 4
+
+        System.out.println("\nLinked List after Deletion at position 4: ");
+        llist.printList();
     }
 
     public void deleteNode(int key) {
@@ -74,34 +90,15 @@ public class Test7 {
         }
     }
 
-    public static void main(String[] args) {
-        Test7 llist = new Test7();
+    class Node {
+        int data;
+        Node next;
 
-//        llist.push(7);
-//        llist.push(1);
-//        llist.push(3);
-//        llist.push(2);
-//
-//        System.out.println("\nCreated Linked list is:");
-//        llist.printList();
-//
-//        llist.deleteNode(1); // Delete node with data 1
-//
-//        System.out.println("\nLinked List after Deletion of 1:");
-//        llist.printList();
+        Node(int d) {
+            data = d;
+            next = null;
 
-        llist.push(7);
-        llist.push(1);
-        llist.push(3);
-        llist.push(2);
-        llist.push(8);
+        }
 
-        System.out.println("\nCreated Linked list is: ");
-        llist.printList();
-
-        llist.deleteNode_givenPosition(0);  // Delete node at position 4
-
-        System.out.println("\nLinked List after Deletion at position 4: ");
-        llist.printList();
     }
 }
