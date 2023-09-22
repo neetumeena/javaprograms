@@ -1,0 +1,96 @@
+{
+  "type": "object",
+  "properties": {
+    "count": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "country": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "country_id": {
+              "type": "string"
+            },
+            "probability": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "country_id",
+            "probability"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "country_id": {
+              "type": "string"
+            },
+            "probability": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "country_id",
+            "probability"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "country_id": {
+              "type": "string"
+            },
+            "probability": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "country_id",
+            "probability"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "country_id": {
+              "type": "string"
+            },
+            "probability": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "country_id",
+            "probability"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "country_id": {
+              "type": "string"
+            },
+            "probability": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "country_id",
+            "probability"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "count",
+    "name",
+    "country"
+  ]
+}

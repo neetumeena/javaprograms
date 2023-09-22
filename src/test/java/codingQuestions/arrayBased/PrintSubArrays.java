@@ -1,6 +1,6 @@
 package codingQuestions.arrayBased;
 
-public class XORofAllSubArrays {
+public class PrintSubArrays {
     static void printSubArrays(int[] arr, int start, int end)
     {
         // Stop if we have reached the end of the array
