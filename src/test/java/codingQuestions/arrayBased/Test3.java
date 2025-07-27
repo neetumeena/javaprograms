@@ -3,6 +3,9 @@ package codingQuestions.arrayBased;
 public class Test3 {
     /*
 
+
+
+
     arr=2,5,3,6,8,9,10
     k=3
     output=5
